@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{date}-Deduction-{#####}",
+ "creation": "2023-03-01 01:34:26.090297",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_id",
+  "account_dr",
+  "column_break_zirbc",
+  "branch_name",
+  "account_cr",
+  "section_break_beelh",
+  "first_date",
+  "type",
+  "column_break_frayy",
+  "last_date",
+  "cow",
+  "buffalo",
+  "status",
+  "section_break_s4et4",
+  "check_all",
+  "supplier_list",
+  "show",
+  "section_break_vyasa",
+  "deduction_list",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch_id",
+   "fieldtype": "Link",
+   "label": "Branch Id",
+   "options": "Dairy Branch"
+  },
+  {
+   "fieldname": "column_break_zirbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "branch_id.branch_name",
+   "fieldname": "branch_name",
+   "fieldtype": "Data",
+   "label": "Branch Name"
+  },
+  {
+   "fieldname": "section_break_beelh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Litre Wise\nPercentage Wise\nBill Wise"
+  },
+  {
+   "fieldname": "column_break_frayy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "section_break_s4et4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_all",
+   "fieldtype": "Button",
+   "label": "Check All"
+  },
+  {
+   "fieldname": "section_break_vyasa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier_list",
+   "fieldtype": "Table",
+   "label": "Supplier List",
+   "options": "Child Deduction Supplier List"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Deduction Process",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Deduction Process",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "cow",
+   "fieldtype": "Float",
+   "label": "Cow"
+  },
+  {
+   "fieldname": "buffalo",
+   "fieldtype": "Float",
+   "label": "Buffalo"
+  },
+  {
+   "default": "Not Deducted",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "show",
+   "fieldtype": "Button",
+   "label": "Show Deduction"
+  },
+  {
+   "fieldname": "deduction_list",
+   "fieldtype": "Table",
+   "label": "Deduction List",
+   "options": "Child Deduction List"
+  },
+  {
+   "default": "Stock In Hand - QT",
+   "fieldname": "account_dr",
+   "fieldtype": "Link",
+   "label": "Account(Dr)",
+   "options": "Account"
+  },
+  {
+   "default": "Creditors - QT",
+   "fieldname": "account_cr",
+   "fieldtype": "Data",
+   "label": "Account(Cr)",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-06 11:49:47.536179",
+ "modified_by": "Administrator",
+ "module": "Dairy",
+ "name": "Deduction Process",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
