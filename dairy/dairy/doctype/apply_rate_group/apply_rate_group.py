@@ -1,6 +1,6 @@
 # Copyright (c) 2023, Vivek and contributors
 # For license information, please see license.txt
-
+# F U 
 import frappe
 from frappe import _
 
